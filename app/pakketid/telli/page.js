@@ -19,7 +19,7 @@ export default function Tellimus() {
                     <p className=" text-white sm:text-base text-xs mb-4">Tell : 45 000 00</p>
         </div>
         </div>
-            <RequestForm />
+            {/* <RequestForm /> */}
 
         </div>
     )

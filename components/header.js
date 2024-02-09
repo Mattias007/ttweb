@@ -26,6 +26,9 @@ const Header = () => {
                     <div className='font-medium flex flex-col p-0.5  md:p-0 mt-4 rounded-lg hover:bg-cyan-600  bg-cyan-950 md:flex-row md:space-x-8 md:hover:bg-transparent rtl:space-x-reverse md:mt-0 md:border-0  md:bg-transparent mdbg-gray-900'>
                     <Link href="/pakketid" className='block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-cyan-100 md:p-0 '>Pakketid</Link>
                     </div>
+                    <div className='font-medium flex flex-col p-0.5  md:p-0 mt-4 rounded-lg hover:bg-cyan-600  bg-cyan-950 md:flex-row md:space-x-8 md:hover:bg-transparent rtl:space-x-reverse md:mt-0 md:border-0  md:bg-transparent mdbg-gray-900'>
+                    <Link href="/rikke" className='block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-cyan-100 md:p-0 '>Rikke</Link>
+                    </div>
                     </ul>
                 </div>
                 </div>
