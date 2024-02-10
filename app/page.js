@@ -11,7 +11,7 @@ export default function Home() {
       <HeroImg />
 
         <div className="p-2">
-        <h1 className="text-lg text-center">Internet</h1>
+        <h1 className="text-lg text-center font-bold">Internet</h1>
         <div className="flex justify-center flex-wrap items-center gap-5 p-5 flex-grow">
 
           <Card title="Kortermaja Internet" conntent="Kuni 200Mbit/s." conntent1="Hind alates : 24€/Kuus" conntent2="Internet ja IPTV" path="/pakketid" butname="Vaata Lähemalt"></Card>
