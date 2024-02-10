@@ -11,11 +11,11 @@ export default function Home() {
       <HeroImg />
 
         <div className="p-2">
-        <h1 className="text-lg text-center">Pakketid</h1>
+        <h1 className="text-lg text-center">Internet</h1>
         <div className="flex justify-center flex-wrap items-center gap-5 p-5 flex-grow">
 
-          <Card title="Saaremaa Kortermajadele" conntent="Kuni 200Mbit/s." conntent1="Üles/Alla Hind: 36€/Kuus" conntent2="TV + Lisateenused" path="/" butname="Vaata Lähemalt"></Card>
-          <Card title="Raadjointernet" conntent="Kuni 8-32Mbit/s Alla*  //  2-8Mbit/s Üles* " conntent1="Üles/Alla Hind: 36€/Kuus" conntent2="TV + Lisateenused" path="/" butname="Vaata Lähemalt"></Card>
+          <Card title="Kortermaja Internet" conntent="Kuni 200Mbit/s." conntent1="Üles/Alla Hind: 36€/Kuus" conntent2="TV + Lisateenused" path="/" butname="Vaata Lähemalt"></Card>
+          <Card title="Raadio Internet" conntent="Kuni 8-32Mbit/s Alla*  //  2-8Mbit/s Üles* " conntent1="Üles/Alla Hind: 36€/Kuus" conntent2="TV + Lisateenused" path="/" butname="Vaata Lähemalt"></Card>
         
         </div>
         </div>
