@@ -8,7 +8,11 @@ const Card = (props) => {
             <p className='w-fit min-w-40'>{props.conntent}</p>
             <p className='w-fit min-w-40'>{props.conntent1}</p>
             <p className='w-fit min-w-40'>{props.conntent2}</p>
-            <Link href={props.path} className='bg-gradient-to-r min-w-40 text-center from-blue-950 from-50% to-indigo-900 p-2 pr-6 pl-6 text-white rounded-xl hover:text-cyan-100'>{props.butname}</Link>
+            <Link href={{
+    pathname: props.path,
+    query: { option : props.option },
+    }}
+    className='bg-gradient-to-r min-w-40 text-center from-blue-950 from-50% to-indigo-900 p-2 pr-6 pl-6 text-white rounded-xl hover:text-cyan-100'>{props.butname}</Link>
         </div>
     )
 }

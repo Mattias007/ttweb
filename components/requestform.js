@@ -1,13 +1,19 @@
 "use client"
 
 import { useState } from 'react';
+import { useSearchParams  } from 'next/navigation';
 
 export default function RequestForm() {
+  const searchParams = useSearchParams()
+ 
+  const option = searchParams.get('option')
+
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
-    pakket: '',
+    pakket: `${option}`,
   });
 
   const handleChange = (e) => {
@@ -28,34 +34,34 @@ export default function RequestForm() {
   return (
     
       <form className='flex gap-2 flex-col  items-center text-lg p-2' onSubmit={handleSubmit}>
-      <h1>Contact Form</h1>
-      <label className='flex flex-col w-3/5 font-medium'>
+      <h1>Pakketi Tellimine</h1>
+      <label className='flex flex-col md:w-3/5 w-full font-medium'>
           Valitud Pakket:
-          <select className="bg-white border border-gray-400 rounded-md pl-2 h-9" name="pakket" value={formData.pakket} onChange={handleChange}>       
-            <option value="Kortermaja200">Kortermaja 200Mbit</option>
-            <option value="Kortermaja100">Kortermaja 100Mbit</option>
-            <option value="Raadio">Raadjointernet 8Mbit/2Mbit</option>
-            <option value="Raadio">Raadjointernet 16Mbit/4Mbit</option>
-            <option value="Raadio">Raadjointernet 32Mbit/8Mbit</option>
+          <select className="bg-white border border-gray-400 rounded-md pl-2 h-9 text-wrap" name="pakket" value={formData.pakket} onChange={handleChange}>       
+            <option value="Kortermaja200">Korter 200Mbit</option>
+            <option value="Kortermaja100">Korter 100Mbit</option>
+            <option value="Raadio12">Raadio 12Mbit/2Mbit</option>
+            <option value="Raadio16">Raadio 16Mbit/4Mbit</option>
+            <option value="Raadio32">Raadio 32Mbit/8Mbit</option>
 
           </select>
         </label>
-        <label className='flex flex-col  w-3/5 '>
+        <label className='flex flex-col  md:w-3/5 w-full'>
           Name:
           <input className='border border-gray-400 rounded-md pl-2 h-9' type="text" name="name" value={formData.name} onChange={handleChange} />
         </label>
         <br />
-        <label className='flex flex-col  w-3/5'>
+        <label className='flex flex-col  md:w-3/5 w-full'>
           Email:
           <input type="email" className='border border-gray-400 rounded-md pl-2 h-9' name="email" value={formData.email} onChange={handleChange} />
         </label>
         <br />
-        <label className='flex flex-col  w-3/5'>
+        <label className='flex flex-col  md:w-3/5 w-full'>
           Lisa Info:
           <textarea name="text" className='border border-gray-400 rounded-md pl-2 h-9' value={formData.message} onChange={handleChange} />
         </label>
         <br />
-        <button className='bg-blue-800 text-white rounded-md p-2 w-3/5 hover:bg-blue-500' type="submit">Submit</button>
+        <button className='bg-gradient-to-r from-blue-950 from-50% to-indigo-900 text-white rounded-md p-2 md:w-3/5 w-full hover:from-blue-500 hover:to-blue-500' type="submit">Submit</button>
         
       </form>
   );

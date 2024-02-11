@@ -2,13 +2,15 @@
 import Image from "next/image";
 import RequestForm from "@/components/requestform";
 
+
+
 export default function Tellimus() {
     return (
         <div className="max-w-full min-h-screen">
             
         <div className="relative md:m-2">
                 <Image
-                    src="/gears.jpg"
+                    src="/cabels.jpg"
                     width={1024}
                     height={500}
                     alt="Picture of the author"
@@ -20,7 +22,7 @@ export default function Tellimus() {
                     <p className=" text-white sm:text-base text-xs mb-4">Tell : 45 000 00</p>
                 </div>
         </div>
-            {/* <RequestForm /> */}
+            <RequestForm />
 
         </div>
     )
