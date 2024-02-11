@@ -1,30 +1,13 @@
 "use client"
 
 import { useState } from 'react';
-import { useSearchParams  } from 'next/navigation';
-import { Suspense } from 'react'
 
-
-export default function RequestForm() {
-  return (
-    // You could have a loading skeleton as the `fallback` too
-    <Suspense>
-      <Form />
-    </Suspense>
-  )
-}
-
-function Form() {
-  const searchParams = useSearchParams()
- 
-  const option = searchParams.get('option')
-
-
+export default function ProblemForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
-    pakket: `${option}`,
+    address: '',
   });
 
   const handleChange = (e) => {
@@ -44,20 +27,9 @@ function Form() {
   return (
     
       <form className='flex gap-2 flex-col  items-center text-lg p-2' onSubmit={handleSubmit}>
-      <h1>Pakketi Tellimine</h1>
-      <label className='flex flex-col md:w-3/5 w-full font-medium'>
-          Valitud Pakket:
-          <select className="bg-white border border-gray-400 rounded-md pl-2 h-9 text-wrap" name="pakket" value={formData.pakket} onChange={handleChange}>       
-            <option value="Kortermaja200">Korter 200Mbit</option>
-            <option value="Kortermaja100">Korter 100Mbit</option>
-            <option value="Raadio12">Raadio 12Mbit/2Mbit</option>
-            <option value="Raadio16">Raadio 16Mbit/4Mbit</option>
-            <option value="Raadio32">Raadio 32Mbit/8Mbit</option>
-
-          </select>
-        </label>
+      <h1>Rikke Teatamine</h1>
         <label className='flex flex-col  md:w-3/5 w-full'>
-          Name:
+          Nimi:
           <input className='border border-gray-400 rounded-md pl-2 h-9' type="text" name="name" value={formData.name} onChange={handleChange} />
         </label>
         <br />
@@ -67,8 +39,12 @@ function Form() {
         </label>
         <br />
         <label className='flex flex-col  md:w-3/5 w-full'>
-          Lisa Info:
+          Rikke Kirjeldus:
           <textarea name="text" className='border border-gray-400 rounded-md pl-2 h-9' value={formData.message} onChange={handleChange} />
+        </label>
+        <label className='flex flex-col  md:w-3/5 w-full'>
+          Address:
+          <input name="text" className='border border-gray-400 rounded-md pl-2 h-9' value={formData.message} onChange={handleChange} />
         </label>
         <br />
         <button className='bg-gradient-to-r from-blue-950 from-50% to-indigo-900 text-white rounded-md p-2 md:w-3/5 w-full hover:from-blue-500 hover:to-blue-500' type="submit">Submit</button>
