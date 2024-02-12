@@ -1,23 +1,11 @@
 import Card from "@/components/card";
+import PackageImg from "@/components/images/packageimg";
 import Image from "next/image";
 
 export default function Paketid() {
     return (
-        <div className="max-w-full min-h-full">
-        <div className="relative md:m-2">
-                <Image
-                    src="/cabels.jpg"
-                    width={1024}
-                    height={500}
-                    alt="Picture of the author"
-                    className="md:rounded-xl"
-                />
-                <div className="absolute top-1/2 left-1/2 w-full h-full transform -translate-x-1/2 -translate-y-1/2 text-center bg-gradient-to-r from-black to-transparent md:rounded-xl"></div>
-                <div className="absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                    <h2 className="sm:text-lg text-base mb font-bold text-white mb-4">Helist Meile et, tellida Pakketii</h2>
-                    <p className=" text-white sm:text-base text-xs mb-4">Tell : 45 000 00</p>
-                </div>
-        </div>
+        <div className="max-w-5xl w-full min-h-screen">
+          <PackageImg />
         <div className="p-2">
 
         <h1 className="text-lg text-center">Paketid</h1>

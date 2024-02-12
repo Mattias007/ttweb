@@ -2,11 +2,12 @@ import Image from "next/image";
 
 import Link from "next/link";
 import Card from "@/components/card";
-import HeroImg from "@/components/heroimg";
+import HeroImg from "@/components/images/heroimg";
+import ProblemImg from "@/components/images/rikkeImg";
 
 export default function Home() {
   return (
-    <div className="max-w-full min-h-screen">
+    <div className="max-w-5xl w-full min-h-screen">
 
       <HeroImg />
 
@@ -20,21 +21,7 @@ export default function Home() {
         </div>
         </div>
 
-        <div className="relative md:m-2">
-        <Image
-            src="/gears.jpg"
-            width={1024}
-            height={500}
-            alt="Picture of the author"
-            className="md:rounded-xl"
-          />
-          <div className="absolute top-1/2 left-1/2 w-full h-full transform -translate-x-1/2 -translate-y-1/2 text-center bg-gradient-to-r from-black to-transparent md:rounded-xl"></div>
-          <div className="absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-center">
-            <h2 className="sm:text-lg text-base mb font-bold text-white mb-4">Kontakt Telefon :</h2>
-            <p className=" text-white sm:text-base text-xs mb-4">45 20 200 ja 50 97 415</p>
-            <Link href="/rikke" className="bg-gradient-to-r from-blue-950 from-50% to-indigo-900 text-xs sm:text-xl text-white px-4 py-2 hover:text-cyan-100 rounded-xl">Teate Rikkest</Link>
-          </div>
-        </div>
+      <ProblemImg />
 
       </div>
 
