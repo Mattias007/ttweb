@@ -23,7 +23,7 @@ function Form() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: '',
+    extra: '',
     pakket: `${option}`,
   });
 
@@ -43,7 +43,7 @@ function Form() {
 
   return (
     
-      <form className='flex gap-2 flex-col  items-center text-lg p-2' onSubmit={handleSubmit}>
+      <form className='flex gap-6 flex-col  items-center text-lg p-2' onSubmit={handleSubmit}>
       <h1>Pakketi Tellimine</h1>
       <label className='flex flex-col md:w-3/5 w-full font-medium'>
           Valitud Pakket:
@@ -57,22 +57,19 @@ function Form() {
           </select>
         </label>
         <label className='flex flex-col  md:w-3/5 w-full'>
-          Name:
+          Nimi:
           <input className='border border-gray-400 rounded-md pl-2 h-9' type="text" name="name" value={formData.name} onChange={handleChange} />
         </label>
-        <br />
         <label className='flex flex-col  md:w-3/5 w-full'>
           Email:
           <input type="email" className='border border-gray-400 rounded-md pl-2 h-9' name="email" value={formData.email} onChange={handleChange} />
         </label>
-        <br />
         <label className='flex flex-col  md:w-3/5 w-full'>
           Lisa Info:
-          <textarea name="text" className='border border-gray-400 rounded-md pl-2 h-9' value={formData.message} onChange={handleChange} />
+          <input type='text' name="extra"className='border border-gray-400 rounded-md pl-2 h-9' value={formData.extra} onChange={handleChange} />
         </label>
-        <br />
-        <button className='bg-gradient-to-r from-blue-950 from-50% to-indigo-900 text-white rounded-md p-2 md:w-3/5 w-full hover:from-blue-500 hover:to-blue-500' type="submit">Submit</button>
-        
+        <button className='bg-gradient-to-r from-blue-950 from-50% to-indigo-900 text-white rounded-md p-2 md:w-3/5 w-full hover:from-blue-500 hover:to-blue-500' type="submit">Saada Tellimus</button>
+
       </form>
   );
 }
