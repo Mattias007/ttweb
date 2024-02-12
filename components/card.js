@@ -11,8 +11,8 @@ const Card = (props) => {
             <Link href={{
     pathname: props.path,
     query: { option : props.option },
-    }}
-    className='bg-gradient-to-r min-w-40 text-center from-blue-950 from-50% to-indigo-900 p-2 pr-6 pl-6 text-white rounded-xl hover:text-cyan-100'>{props.butname}</Link>
+}}
+className='bg-gradient-to-r min-w-40 text-center from-blue-950 from-50% to-indigo-900 p-2 pr-6 pl-6 text-white rounded-xl hover:text-cyan-100'>{props.butname}</Link>
         </div>
     )
 }
