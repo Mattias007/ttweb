@@ -49,7 +49,7 @@ function Form() {
           <input required type="email" className='border border-gray-400 rounded-md pl-2 h-9' name="email"/>
         </label>
         <label className='flex flex-col  md:w-3/5 w-full'>
-          Lisa Info:
+          Lisainfo:
           <input required type='text' name="extra" className='border border-gray-400 rounded-md pl-2 h-9'/>
         </label>
 
