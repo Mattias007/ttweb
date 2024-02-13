@@ -17,7 +17,7 @@ export default function Paketid() {
         <div className="flex gap-2 p-2 flex-wrap">
           <Card title="Raadio Internet" conntent="Kuni 32Mbit/s Alla*  //  8Mbit/s Üles* " conntent1="Üles/Alla Hind: 36€/Kuus" conntent2="TV + Lisateenused" path="/pakketid/telli" option="Raadio32" butname="Telli Pakett"></Card>
           <Card title="Raadio Internet" conntent="Kuni 16Mbit/s Alla*  //  4Mbit/s Üles* " conntent1="Üles/Alla Hind: 29€/Kuus" conntent2="TV + Lisateenused" path="/pakketid/telli" option="Raadio16" butname="Telli Pakett"></Card>
-          <Card title="Raadio Internet" conntent="Kuni 12Mbit/s Alla*  //  2Mbit/s Üles* " conntent1="Üles/Alla Hind: 26€/Kuus" conntent2="TV + Lisateenused" path="/pakketid/telli" option="Raadio32"butname="Telli Pakett"></Card>
+          <Card title="Raadio Internet" conntent="Kuni 12Mbit/s Alla*  //  2Mbit/s Üles* " conntent1="Üles/Alla Hind: 26€/Kuus" conntent2="TV + Lisateenused" path="/pakketid/telli" option="Raadio12"butname="Telli Pakett"></Card>
         </div>
         </div>
         </div>
