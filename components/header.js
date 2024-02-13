@@ -21,13 +21,13 @@ const Header = () => {
                 <div className={`${isMenuOpen ? '' : 'hidden'} w-full md:block md:w-auto`}>
                     <ul className='font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent'>
                     <div className='font-medium flex flex-col p-0.5  md:p-0 mt-4 rounded-lg hover:bg-cyan-600 bg-black md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:hover:bg-transparent  md:bg-transparent mdbg-gray-900'>
-                    <Link href="/" className='block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-cyan-100  md:p-0'>Home</Link>
+                    <Link href="/" className='block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-cyan-100  md:p-0'>Avaleht</Link>
                     </div>
                     <div className='font-medium flex flex-col p-0.5  md:p-0 mt-4 rounded-lg hover:bg-cyan-600  bg-black md:flex-row md:space-x-8 md:hover:bg-transparent rtl:space-x-reverse md:mt-0 md:border-0  md:bg-transparent mdbg-gray-900'>
-                    <Link href="/pakketid" className='block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-cyan-100 md:p-0 '>Pakketid</Link>
+                    <Link href="/internet" className='block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-cyan-100 md:p-0 '>Internet</Link>
                     </div>
                     <div className='font-medium flex flex-col p-0.5  md:p-0 mt-4 rounded-lg hover:bg-cyan-600  bg-black md:flex-row md:space-x-8 md:hover:bg-transparent rtl:space-x-reverse md:mt-0 md:border-0  md:bg-transparent mdbg-gray-900'>
-                    <Link href="/rikke" className='block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-cyan-100 md:p-0 '>Rikke</Link>
+                    <Link href="/kontakt" className='block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-cyan-100 md:p-0 '>Kontakt</Link>
                     </div>
                     </ul>
                 </div>

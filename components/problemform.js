@@ -20,7 +20,7 @@ export default function ProblemForm() {
 
 
 
-      <h1>Rikke Teatamine</h1>
+      <h1>Saada Teade</h1>
         <label className='flex flex-col  md:w-3/5 w-full'>
           Nimi:
           <input required className='border border-gray-400 rounded-md pl-2 h-9' type="text" name="name"/>
@@ -31,19 +31,19 @@ export default function ProblemForm() {
         </label>
 
         <label className='flex flex-col  md:w-3/5 w-full'>
-          Rikke Kirjeldus:
+          Teade:
           <textarea required name="message" className='border border-gray-400 rounded-md pl-2 h-9'/>
         </label>
         <label className='flex flex-col  md:w-3/5 w-full'>
           Address:
-          <input required name="address" className='border border-gray-400 rounded-md pl-2 h-9' />
+          <input name="address" className='border border-gray-400 rounded-md pl-2 h-9' />
         </label>
 
         <p>
         {state?.message}
         </p>
 
-        <button className='bg-gradient-to-r from-blue-950 from-50% to-indigo-900 text-white rounded-md p-2 md:w-3/5 w-full hover:from-blue-500 hover:to-blue-500' type="submit">Saada Rikke Teatus</button>
+        <button className='bg-gradient-to-r from-blue-950 from-50% to-indigo-900 text-white rounded-md p-2 md:w-3/5 w-full hover:from-blue-500 hover:to-blue-500' type="submit">Saada Teade</button>
         
       </form>
   );
