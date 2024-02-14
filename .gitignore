@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 # hide api key
-# app/actions.js
+app/actions.js

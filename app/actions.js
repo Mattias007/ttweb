@@ -4,7 +4,7 @@ import { Resend } from 'resend';
 
 
 
-const resend = new Resend('');
+const resend = new Resend('re_AcYHLvbc_EWiupcEebNgCcFGHU2YxdQP1');
 
 export async function createRequest(prevState, formData) {
     
