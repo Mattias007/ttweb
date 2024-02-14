@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Card = (props) => {
     return ( 
-        <div className='bg-cyan-200 min-w-52 min-h-52 items-center flex flex-col flex-grow h-52 justify-center p-2 gap-2 rounded-xl '>
+        <div className='bg-cyan-200 min-w-52 min-h-52 items-center flex flex-col flex-grow h-52 justify-center p-2 gap-2  rounded-xl '>
             <h1 className='text-center w-fit font-bold'>{props.title}</h1>
             <p className='w-fit min-w-40'>{props.conntent}</p>
             <p className='w-fit min-w-40'>{props.conntent1}</p>
