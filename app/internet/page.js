@@ -8,7 +8,10 @@ export default function Paketid() {
           <PackageImg />
         <div className="p-2">
 
-        <h1 className="text-lg text-center">Pakketii</h1>
+        <h1 className="text-lg text-center">Teetormaja pakub soodsaid ja kiireid interneti pakette.</h1>
+        <h2>Paketid erinevad oma võimalustelt.
+Internetti saab tellida koos televisiooniga või ilma,</h2>
+<h3>(Kahjuks ei ole meil tehniliselt võimalik teenust pakkuda kogu Saaremaal).</h3>
         <div className="flex gap-2 flex-wrap p-2">
 
           <Card title="Kortermaja Internet" conntent="Kiirusega kuni 200Mbit/s." conntent1="Hind: 36€/Kuus" conntent2="Internet ja IPTV" path="/internet/telli" option="Kortermaja200" butname="Telli Pakett"></Card>
