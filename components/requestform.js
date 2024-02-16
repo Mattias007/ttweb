@@ -28,7 +28,7 @@ function Form() {
   return (
     
       <form className='flex gap-6 flex-col  items-center text-lg p-2' action={formAction}>
-      <h1>Pakketi Tellimine</h1>
+      <h1>Soovin tagasisidet</h1>
       <label className='flex flex-col md:w-3/5 w-full font-medium'>
           Valitud Pakket:
           <select className="bg-white border border-gray-400 rounded-md pl-2 h-9 text-wrap" defaultValue={option} name="pakket">       
@@ -57,7 +57,7 @@ function Form() {
         {state?.message}
         </p>
         
-        <button className='bg-gradient-to-r from-blue-950 from-50% to-indigo-900 text-white rounded-md p-2 md:w-3/5 w-full hover:from-blue-500 hover:to-blue-500' type="submit">Saada Tellimus</button>
+        <button className='bg-gradient-to-r from-blue-950 from-50% to-indigo-900 text-white rounded-md p-2 md:w-3/5 w-full hover:from-blue-500 hover:to-blue-500' type="submit">Saada Teade</button>
 
       </form>
   );
