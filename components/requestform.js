@@ -28,7 +28,7 @@ function Form() {
   return (
     
       <form className='flex gap-6 flex-col  items-center text-lg p-2' action={formAction}>
-      <h1>Soovin tagasisidet</h1>
+      <h1>Soovin liituda, palun tagasisidet</h1>
       <label className='flex flex-col md:w-3/5 w-full font-medium'>
           Valitud Pakket:
           <select className="bg-white border border-gray-400 rounded-md pl-2 h-9 text-wrap" defaultValue={option} name="pakket">       
