@@ -7,7 +7,7 @@ export default function Rikke() {
     return (
     <div className="max-w-5xl w-full min-h-screen">
         <ProblemFormImg />
-    <h1 className="w-full text-center text-red-400">Rikkeid likvideeritakse tööajal, laekumise järjekorras, hiljemalt teatamisele järgneva tööpäeva jooksul. </h1>
+    <h1 className="w-full text-center text-lg text-red-400">Rikkeid likvideeritakse tööajal, laekumise järjekorras, hiljemalt teatamisele järgneva tööpäeva jooksul. </h1>
       <ProblemForm />
 
     </div>
